@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudNova | Cloud Computing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- Animated Background -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">☁</div>
+            <span>CloudNova</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="main-container">
+
+        <!-- LEFT SIDE -->
+        <section class="hero-section">
+
+            <div class="project-badge">
+                CLOUD COMPUTING • ISA 3
+            </div>
+
+            <h1>
+                Powering Ideas
+                <span>Beyond Limits.</span>
+            </h1>
+
+            <p class="hero-description">
+                Experience a simple and secure cloud-based
+                communication platform built for modern applications.
+            </p>
+
+
+            <!-- Feature Cards -->
+            <div class="features" id="features">
+
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+
+                    <div>
+                        <h3>Fast & Reliable</h3>
+                        <p>Quick communication with our cloud system.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+
+                    <div>
+                        <h3>Secure Data</h3>
+                        <p>Your submitted information stays protected.</p>
+                    </div>
+                </div>
+
+
+                <div class="feature">
+                    <div class="feature-icon">☁</div>
+
+                    <div>
+                        <h3>Cloud Powered</h3>
+                        <p>Connected through a distributed architecture.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Status -->
+            <div class="system-status">
+
+                <span class="online-dot"></span>
+
+                <span>Cloud infrastructure online</span>
+
+                <div class="status-line"></div>
+
+                <span>24/7</span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RIGHT SIDE -->
+        <section class="form-section" id="contact">
+
+            <div class="form-card">
+
+                <div class="form-header">
+
+                    <div class="form-label">
+                        GET IN TOUCH
+                    </div>
+
+                    <h2>Send a Message</h2>
+
+                    <p>
+                        Have a question? We'd love to hear from you.
+                    </p>
+
+                </div>
+
+
+                <form
+                    action="YOUR_NGROK_URL/submit.php"
+                    method="POST"
+                >
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <div class="input-container">
+
+                            <span class="input-icon">♙</span>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-container">
+
+                            <span class="input-icon">✉</span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject <span>(Optional)</span>
+                        </label>
+
+                        <div class="input-container">
+
+                            <span class="input-icon">▤</span>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is this regarding?"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <div class="input-container textarea-container">
+
+                            <span class="input-icon">💬</span>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Button -->
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+
+                        <span>Submit Message</span>
+
+                        <span class="button-arrow">→</span>
+
+                    </button>
+
+
+                    <div class="security-note">
+
+                        <span>🔒</span>
+
+                        <span>
+                            Securely transmitted through our cloud backend.
+                        </span>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- Basic Protection -->
+<script>
+
+document.addEventListener(
+    "contextmenu",
+    function(event) {
+        event.preventDefault();
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "F12") {
+            event.preventDefault();
+        }
+
+        if (
+            event.ctrlKey &&
+            event.shiftKey &&
+            ["i", "j", "c"].includes(
+                event.key.toLowerCase()
+            )
+        ) {
+            event.preventDefault();
+        }
+
+        if (
+            event.ctrlKey &&
+            event.key.toLowerCase() === "u"
+        ) {
+            event.preventDefault();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+</html>
